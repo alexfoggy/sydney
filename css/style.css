@@ -1,0 +1,779 @@
+:root{
+--width:1280px;
+--background-color:#f6f6f5;
+--color-name-animal:#3498db;
+}
+p::selection{
+	background-color:transparent;
+}
+div::selection{
+	background-color:transparent;
+}
+img::selection{
+	background-color:transparent;
+}
+a::selection{
+	background-color:transparent;
+}
+h5::selection{
+	background-color:transparent;
+}
+body{
+	margin:0;
+	padding:0;
+}
+.wrapper{
+	width:100%;
+	height:100vh;
+}
+nav{
+	width:100%;
+	background-color:var(--background-color);
+	z-index: 10000;
+}
+.nav-bar{
+	width:var(--width);
+	height:60px;
+	
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;	
+}
+.nav-bar ul{
+	padding:0;
+	margin:0;
+	list-style: none;
+	display:flex;
+}
+.nav-bar a{
+	color:black;
+	display:block;
+	padding:0px 20px;
+	text-decoration:none;
+}
+.nav-bar a:hover{
+	
+}
+.bth{
+	display:none;
+}
+.bth-li{
+	display:none;
+}
+
+.block1{
+	width:100%;
+	min-height:773px;
+	background-image:url('../img/background-1.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.ins{
+    font-size:7em;
+    height:773px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(0,0,0,.3);
+
+}
+.wrapper2{
+	width:100%;
+	height:auto;
+}
+.about{
+	margin:0 auto;
+	width:var(--width);
+	padding:50px;
+}
+.title-hist{
+	font-size:4em;
+}
+.history p{
+	font-size:18px;
+}
+.block2{
+	width:100%;
+	min-height:600px;
+	background-image:url('../img/background-2.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.animals{
+	margin:0 auto;
+	width:var(--width);
+	padding:50px;
+
+}
+.title-animals{
+	font-size:5em;
+}
+.animals-info{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.animals-info .col {
+	border-top:1px silver solid;
+    padding:10px 20px 10px 20px;
+	min-height:400px;
+}
+
+.animals-info .col p{
+	margin-top:60px;
+	font-weight:1;
+	font-size: 18px;
+} 
+.coala{
+	display:block;
+	width:100px;
+	height:100px;
+	margin:0 auto;
+	border-radius:50%;
+	margin-top:5px;
+	background-size:150px 150px;
+	background-image:url("../img/coala.jpg");
+	background-repeat:no-repeat;
+	background-position: center;
+	position:relative;
+}
+.coala:after{
+	content: "Coala";
+	widows:50px;
+	height:20px;
+	z-index:-1;
+	position:absolute;
+    left:-7px;
+    bottom:-30px;
+    font-size:28px;
+    padding:20px;
+    color:var(--color-name-animal);
+    font-weight:300;
+    transition:0.4s;
+}
+
+.kenguru{
+	display:block;
+	width:100px;
+	height:100px;
+	margin:0 auto;
+	border-radius:50%;
+	margin-top:5px;
+	background-size:150px 150px;
+	background-image:url("../img/kenguru.jpg");
+	background-repeat:no-repeat;
+	background-position:top;
+	position:relative;
+}
+.kenguru:after{
+	content:"Kenguru";
+	widows:50px;
+	height:20px;
+	z-index:-1;
+	position:absolute;
+    bottom:-30px;
+    left:-17px;
+    font-size:28px;
+    padding:20px;
+    color:var(--color-name-animal);
+    font-weight:300;
+    transition:0.4s;
+
+}
+.duckbill{
+	display:block;
+	width:100px;
+	height:100px;
+	margin:0 auto;
+	border-radius:50%;
+	margin-top:5px;
+	background-size:150px 150px;
+	background-image:url("../img/duckbill.jpg");
+	background-repeat:no-repeat;
+	background-position: left;
+	position:relative;
+}
+.duckbill:after{
+	content:"Duckbill";
+	widows:50px;
+	height:20px;
+	z-index:-1;
+	position:absolute;
+    bottom:-30px;
+    left:-17px;
+    font-size:28px;
+    padding:20px;
+    color:var(--color-name-animal);
+    font-weight:300;
+    transition:0.4s;
+}
+
+.block3{
+	width:100%;
+	min-height:300px;
+	background-image:url('../img/background-3.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:scroll;
+	background-position:center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.food{
+	margin:0 auto;
+	width:var(--width);
+}
+.line{
+	position:relative;
+
+}
+.food-title{
+	margin-top:30px;
+}
+
+.dish h5{
+	padding:0 0 20px 0px;
+	font-size:2.5em;
+	color:#34495e;
+	position:relative;
+	background-color:transparent;
+	z-index:0;
+}
+.dish h5:after{
+	z-index:0;
+	content:'';
+	position:absolute;
+	width:30%;
+	height:1px;
+	right:0;
+	top:37.5%;
+	background-color:silver;
+}
+.dish h5:before{
+	z-index:0;
+	content:'';
+	position:absolute;
+	width:30%;
+	height:1px;
+	left:0;
+	top:37.5%;
+	background-color:silver;
+}
+.dish p{
+	padding:30px 50px 30px 50px;
+	text-align: center;
+	font-weight:1;
+	font-size:20px;
+}
+.block4{
+	width:100%;
+	min-height:500px;
+	background-image:url('../img/background-4.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+}
+.ins-places{
+	display:flex;
+	justify-content:center; 
+	align-items:center;
+	font-size:5em;
+	color:white;
+}
+.places{
+	width:var(--width);
+	margin:0 auto;
+
+}
+.opera h5{
+     font-size:2.2em;
+     margin-bottom:40px;
+}
+.opera-fotos {
+	width:500px;
+	height:260px;
+	/* background-image:url("opera.jpg");
+	background-repeat:no-repeat;
+	background-size:500px 260px; */
+	cursor:pointer;
+	margin:0 auto;
+	box-shadow:0 0 10px;
+	transition:0.5s;
+	position:relative;
+	border-radius:5px;
+}
+.opera-fotos:after{
+	content:"more";
+	position:absolute;
+    left:50%;
+    text-align:center;
+	bottom:20px;
+	display:block;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-weight:1;
+    font-size:20px;
+}
+.opera-fotos:before{
+	content:"";
+	width:100%;
+	height:60px;
+    background-color:rgba(0,0,0,.5);
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+.opera-fotos:hover{
+	background-color:rgba(0,0,0,.0);
+
+}
+
+.opera-fotos img{
+	width:500px;
+	height:260px;
+	border-radius:5px;
+}
+.wrapper.openOpera .opera-fotos{
+	width:var(--width);
+	height:auto;
+	box-shadow:0 0 0px;
+}
+.wrapper.openOpera .opera-fotos img{
+	width:var(--width);
+	height:auto;
+}
+.wrapper.openOpera .opera-fotos:hover{
+	box-shadow:0 0 0;
+	transform:scale(1);
+}
+.album1 {
+	display:none;
+}
+
+.wrapper.openOpera .album1{
+	display:block;
+}
+.wrapper.openOpera .opera-fotos:after{
+	content:"close";
+	position:absolute;
+    left:50%;
+    text-align:center;
+	bottom:20px;
+	display:block;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-weight:1;
+    font-size:20px;
+}
+.wrapper.openOpera .opera-fotos:before{
+	content:"";
+	width:100%;
+	height:60px;
+    background-color:rgba(0,0,0,.5);
+    position:absolute;
+    left:0;
+    bottom:5px;
+}
+/* bridge */
+.bridge h5{
+     font-size:2.2em;
+     margin-bottom:40px;
+}
+.bridge{
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.bridge-fotos {
+	width:500px;
+	height:260px;
+	/* background-image:url("opera.jpg");
+	background-repeat:no-repeat;
+	background-size:500px 260px; */
+	cursor:pointer;
+	margin:0 auto;
+	box-shadow:0 0 10px;
+	transition:0.5s;
+	position:relative;
+	border-radius:5px;
+}
+.bridge-fotos:after{
+	content:"more";
+	position:absolute;
+    left:50%;
+    text-align:center;
+	bottom:20px;
+	display:block;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-weight:1;
+    font-size:20px;
+}
+.bridge-fotos:before{
+	content:"";
+	width:100%;
+	height:60px;
+    background-color:rgba(0,0,0,.5);
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+.bridge-fotos:hover{
+	background-color:rgba(0,0,0,.0);
+
+}
+
+.bridge-fotos img{
+	width:500px;
+	height:260px;
+	border-radius:5px;
+
+}
+.wrapper.openBridge .bridge-fotos{
+	width:var(--width);
+	height:auto;
+	box-shadow:0 0 0px;
+}
+.wrapper.openBridge .bridge-fotos img{
+	width:var(--width);
+	height:auto;
+}
+.wrapper.openBridge .bridge-fotos:hover{
+	box-shadow:0 0 0;
+	transform:scale(1);
+}
+.album2 {
+	display:none;
+}
+
+.wrapper.openBridge .album2{
+	display:block;
+}
+.wrapper.openBridge .bridge-fotos:after{
+	content:"close";
+	position:absolute;
+    left:50%;
+    text-align:center;
+	bottom:20px;
+	display:block;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-weight:1;
+    font-size:20px;
+}
+.wrapper.openBridge .bridge-fotos:before{
+	content:"";
+	width:100%;
+	height:60px;
+    background-color:rgba(0,0,0,.5);
+    position:absolute;
+    left:0;
+    bottom:5px;
+}
+
+
+.scroll-up{
+	width:50px;
+	height:50px;
+    position:fixed;
+    bottom:100px;
+    right:50px;
+    cursor:pointer;
+    display:none;
+    background-color:#f6f6f6;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:0.5s;
+}
+.scroll-up:hover{
+	box-shadow: 0 0 10px;
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+  30% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  40% {
+    -webkit-transform: rotate(17deg);
+    transform: rotate(17deg);
+  }
+  50% {
+    -webkit-transform: rotate(-13deg);
+    transform:rotate(-13deg);
+  }
+  65% {
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+  }
+  80%{
+  	-webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+
+.scroll-up:hover i{
+  -webkit-animation: swing 0.6s ease;
+  animation: swing 0.6s ease;
+   -webkit-animation-iteration-count: 1;
+   animation-iteration-count: 1;
+}
+footer{
+	width:100%;
+	min-height:200px;
+	background-color:rgba(0,0,0,.1);
+	padding:30px;
+	box-sizing:border-box;
+}
+footer .info{
+	width:var(--width);
+	margin:0 auto;
+	display:grid;
+	grid-template-columns:1fr 1fr;
+}
+.location-title{
+	margin-bottom:30px;
+	font-size:3em;
+}
+.info-title{
+	margin-bottom:30px;
+	font-size:3em;
+}
+.info-content{
+	font-size:16px;
+	font-weight:1;
+	padding:20px;
+}.madeby{
+	width:100%;
+	height:auto;
+
+}
+.alexfoggy{
+	margin:0 auto;
+	width:var(--width);
+}
+.alexfoggy a:hover{
+	color:#ee5253;
+}
+
+
+@media (max-width:1297px){
+	:root{
+--width:100%;
+}
+
+}
+@media (max-width:830px){
+    .ins{
+       font-size:4em;
+    }
+    .block2{
+    	background-position:center;
+    	background-attachment:scroll;
+    }
+    .animals-info{
+    display:grid;
+    grid-template-columns:1fr;
+}
+.dish h5:after{
+	
+	width:20%;
+	
+}
+.dish h5:before{
+	
+	width:20%;
+	
+}
+.scroll-up{
+	
+    bottom:100px;
+    right:20px;
+    
+}
+iframe{
+	width:100%;
+}
+.info-content{
+	padding:20px;
+	text-align: center;
+}
+.info-title{
+	margin-bottom:10px;
+	font-size:3em;
+}
+
+}
+@media (max-width:630px){
+	nav{
+		position:fixed;
+		left:0;
+		top:0;
+	}
+	nav img{
+		height:90%;
+	}
+.nav-bar ul{
+	padding:0;
+	margin:0;
+	list-style: none;
+	display:grid;
+	grid-template-columns:1fr;
+	position:fixed;
+	width:100%;
+	height:100vh;
+	right:-100%;
+	top:0;
+	transition:0.5s;
+	background-color:rgba(0,0,0,1);
+}
+.nav-bar{
+	
+}
+.wrapper.menuopen .nav-bar ul{
+	right:0;
+}
+.wrapper.menuopen .bth{
+	display:none;
+}
+.nav-bar a{
+	color:white;
+	display:block;
+	padding:0px 10px;
+	text-decoration:none;
+	text-align:center;
+	font-size:3em;
+}
+.bth{
+	position:absolute;
+	left:-70px;
+	top:0;
+	width: 80px;
+	display:block;
+	padding:0;
+	font-size:2em;
+	justify-content:center;
+	align-items:center;
+	border-radius:50%;
+	cursor:pointer
+	color:black;
+}
+.bth:hover{
+	background-color:transparent;
+}
+.bth-li{
+	display:block;
+}
+.dish h5:after{
+	
+	width:10%;
+	
+}
+.dish h5:before{
+	
+	width:10%;
+	
+}
+footer .info{
+	grid-template-columns:1fr;
+}
+
+}
+@media (max-width:520px){
+	.title-animals{
+	font-size:4em;
+	margin-bottom:40px;
+}
+.info-title{
+	font-size:2.3em;
+}
+.location-title{
+    font-size:2.3em;
+}
+.info-content{
+	font-size:14px;
+	font-weight:1;
+	padding:10px;
+	text-align:left;
+}
+}
+@media (max-width:473px){
+	.ins{
+		font-size:3em;
+
+	}
+	.title-hist{
+		font-size:3em;
+	}
+	.dish h5:after{
+	display:none;
+	width:20%;
+	
+}
+.dish h5:before{
+	display:none;
+	width:20%;
+	
+}
+.ins-places{
+	font-size:4em;
+}
+.bridge-fotos img{
+	width:100vw;
+	height:auto;
+	border-radius:5px;
+
+}
+.bridge-fotos{
+	width:100%;
+	height:auto;
+}
+.opera-fotos{
+	width:100%;
+	height:auto;
+}
+.opera-fotos img{
+	width:100vw;
+	height:auto;
+	border-radius:5px;
+}
+.descp{
+	margin-top:30px;
+}
+}
+@media (max-width:414px){
+.title-hist{
+	font-size:2.3em;
+}
+.title-animals{
+	font-size:2.3em;
+}
+.dish p{
+	padding:20px 30px 20px 30px;
+	text-align: center;
+	font-weight:1;
+	font-size:16px;
+}
+}
